@@ -7,8 +7,8 @@ exports.index = function(req, res) {
 	var Client = require('node-rest-client').Client;
 	var client = new Client();
 
-	// direct way
-	client.get("http://mohdzeeshanshaikh-grails-gumball-v2.cfapps.io/gumballs/1", function(data,
+
+	client.get("http://abdul-grails-gumballmachine-v2.cfapps.io/gumballs", function(data,
 			response) {
 		var arrayData = {};
 		arrayData = data;
@@ -31,7 +31,6 @@ exports.GumballAction = function(req, res) {
 	var modelNumber = req.param('modelNumber');
 	var serialNumber = req.param('serialNumber');
 
-	// var message=req.param('message');
 	if (event === 'Insert Quater' && state === 'NoCoinState') {
 
 		state = 'HasCoinState';
@@ -50,7 +49,7 @@ exports.GumballAction = function(req, res) {
 		var messagesToBePutInPost = [];
 		var Client = require('node-rest-client').Client;
 		var client = new Client();
-		client.get("http://mohdzeeshanshaikh-grails-gumball-v2.cfapps.io/gumballs/1", function(data,
+		client.get("http://abdul-grails-gumballmachine-v2.cfapps.io/gumballs", function(data,
 				response) {
 			var ar = {};
 			ar = data;
@@ -67,9 +66,7 @@ exports.GumballAction = function(req, res) {
 				};
 				client.put("http://mohdzeeshanshaikh-grails-gumball-v2.cfapps.io/gumballs/1", args,
 						function(data, response) {
-							// parsed response body as js object
 							console.log(data);
-							// raw response
 							console.log(response);
 							var messageToBePut = [];
 							messagesToBePutInPost.push(modelNumber);
