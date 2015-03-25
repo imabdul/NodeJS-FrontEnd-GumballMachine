@@ -19,4 +19,5 @@ Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
 
 Nodeclipse is free open-source project that grows with your contributions.
 
-About Project:  Developed Front-End in Express Framework [Nodejs] and hosted on OpenShift. Grails exposed the Clear-Db [MySQL] database as REST Services that is hosted on Pivotal Cloud Foundry in above version.
+ABOUT PROJECT:  
+Developed Front-End in Express Framework [Nodejs] and hosted on OpenShift. Other Grails application exposed its Clear-Db [MySQL] database as REST Services that is hosted on Pivotal Cloud Foundry for transactions.
