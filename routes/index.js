@@ -64,7 +64,7 @@ exports.GumballAction = function(req, res) {
 						"Content-Type" : "application/json"
 					}
 				};
-				client.put("http://mohdzeeshanshaikh-grails-gumball-v2.cfapps.io/gumballs/1", args,
+				client.put("http://abdul-grails-gumballmachine-v2.cfapps.io/gumballs", args,
 						function(data, response) {
 							console.log(data);
 							console.log(response);
